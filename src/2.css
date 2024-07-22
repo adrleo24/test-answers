@@ -1,0 +1,22 @@
+.container {
+font-size: 14px;
+}
+.container .header {
+font-size: 18px;
+}
+.container .shop-list {
+list-style: none;
+margin-left: -15px;
+}
+.container .shop-list li.item {
+color: green;
+}
+/* Need to increase specificity to override the previous rule */
+.container .shop-list:first-of-type .item {
+    color: blue;
+}
+
+/* Apply background color to every other line */
+.container .shop-list li:nth-child(odd) {
+    background-color: #f0f0f0;
+}
